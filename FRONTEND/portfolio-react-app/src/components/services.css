@@ -1,0 +1,103 @@
+/* Body Styling */
+body {
+  background-color: #999999; /* Dark background */
+  color: #fff; /* Light text */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Content Styling */
+.main-content {
+  display: flex; /* Flex layout for left card and main content */
+  flex-direction: column-reverse;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: auto; /* Full viewport height */
+  padding: 20px;
+}
+
+/* Left Card Styling */
+.left-card {
+  position: sticky; /* Keeps the card fixed while scrolling */
+  top: 20px; /* Stick to the top with some spacing */
+  width: 250px; /* Fixed width for the left card */
+  background-color: #1e1e1e; /* Dark card background */
+  border: 2px solid #444; /* Subtle border */
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px; /* Space between the left card and main section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Specialization Section */
+#specialization {
+  flex: 1; /* Main content takes the remaining space */
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto; /* Horizontal scrolling if needed */
+  padding: 20px 0;
+}
+
+/* Skill Cards Styling */
+.skill-card {
+  background-color: #1e1e1e; /* Dark card background */
+  padding: 30px;
+  width: 250px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #ccc; /* Slightly lighter text */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack the layout vertically */
+  }
+
+  .left-card {
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 20px; /* Space between the card and main content */
+  }
+
+  .skill-card {
+    width: 100%; /* Full width for small screens */
+    max-width: 300px; /* Limit the card width */
+  }
+}

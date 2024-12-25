@@ -1,0 +1,36 @@
+body {
+  background-color: #999999; /* Dark background */
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.main-content {
+  overflow-y: auto;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+.right-icons {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+}
+
+.icon {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.top-button {
+  margin: 20px 0;
+}

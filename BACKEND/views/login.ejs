@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #23242f, #101115);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        border-radius: 15px;
+      }
+      .card-title {
+        font-weight: bold;
+        color: #282941;
+      }
+      .btn-primary {
+        background-color: #43445c;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #6b73ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card shadow-lg">
+            <div class="card-body p-5">
+              <h3 class="card-title text-center mb-4">Admin Dashboard login</h3>
+              <form action="/login" method="POST">
+                <!-- Email Input -->
+                <div class="mb-4">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control form-control-lg"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <!-- Password Input -->
+                <div class="mb-4">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control form-control-lg"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  Login
+                </button>
+              </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
